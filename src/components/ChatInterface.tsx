@@ -296,7 +296,13 @@ export default function ChatInterface() {
             <div className="mt-4 text-sm text-gray-400 max-w-sm mx-auto">
               <p>{t('tryAsking')}</p>
               <ul className="mt-3 space-y-2 text-left">
-                {(t('exampleQuestions') as string[]).map((question, index) => (
+                {[
+  "What is the price of rice?",
+  "Weather forecast today?",
+  "Best fertilizer for cotton?",
+  "How to prevent crop diseases?"
+].map((question, index) => (
+
 
                   <li key={index} className="flex items-start gap-2"><span className="text-green-500">•</span> "{question}"</li>
                 ))}
